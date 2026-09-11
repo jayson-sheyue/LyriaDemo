@@ -1,0 +1,13 @@
+{
+  "id": "song-lyrics",
+  "title": "自备歌词 · 英文独立流行",
+  "group": "成曲能干什么",
+  "note": "官方可用 [Verse]/[Chorus]。不要塞受版权保护的词。普通话歌词没有官方语言表。",
+  "engine": "song",
+  "expected": "按你给的词唱的英文独立流行短单。",
+  "config": {
+    "prompt": "Create a dreamy indie pop song, 90 seconds, with the lyrics below. Soft female vocals, warm guitars, gentle drums.",
+    "instrumental": false,
+    "lyrics": "[Verse 1]\nWalking through the neon glow,\ncity lights reflect below,\nevery shadow tells a story,\nevery corner, fading glory.\n\n[Chorus]\nWe are the echoes in the night,\nburning brighter than the light,\nhold on tight, don't let me go,\nwe are the echoes down below."
+  }
+}

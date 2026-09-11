@@ -1,0 +1,13 @@
+{
+  "id": "clip-image",
+  "title": "看图 · 按画面情绪",
+  "group": "短片能干什么",
+  "note": "导入后请到第 02 步点「选择参考图」上传 JPEG/PNG。最多 10 张，内联合计约 100 MB。模型按画面作曲。配乐页没有这个能力。",
+  "engine": "clip",
+  "expected": "情绪跟画面走的大约 30 秒配乐。",
+  "config": {
+    "prompt": "An atmospheric ambient track inspired by the mood and colors in this image. Instrumental.",
+    "instrumental": true,
+    "lyrics": ""
+  }
+}

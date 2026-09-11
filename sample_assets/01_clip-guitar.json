@@ -1,0 +1,13 @@
+{
+  "id": "clip-guitar",
+  "title": "入门 · 器乐吉他",
+  "group": "先这样试",
+  "note": "最短路径：英文描述 + 只要器乐。固定大约 30 秒。区域必须是 global。",
+  "engine": "clip",
+  "expected": "大约 30 秒原声吉他器乐，没有人声。",
+  "config": {
+    "prompt": "A short instrumental acoustic guitar piece, warm and intimate, fingerpicked, slow tempo, high-quality production.",
+    "instrumental": true,
+    "lyrics": ""
+  }
+}

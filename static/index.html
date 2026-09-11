@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>配乐实验室 · Lyria</title><meta name="description" content="按工作台学习 Lyria 3 Clip、Lyria 3 Pro 与 Lyria 2 器乐生成。"><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body>
+<header>
+<a class="brand" href="/"><span class="brand-icon">♪</span> 配乐实验室 <span class="brand-sub">分页对照</span></a>
+<nav aria-label="工作台与文档">
+<button class="nav active" data-page="clip">短片</button>
+<button class="nav" data-page="song">成曲</button>
+<button class="nav" data-page="score">配乐</button>
+<button class="nav" data-page="learn">入门指南</button>
+<button class="nav" data-page="sources">官方资料 ↗</button>
+</nav>
+<span class="local">● 本地运行 · Python SDK</span>
+</header>
+<main>
+<div id="workspaces"></div>
+<section id="learn" hidden>
+<div class="page-title"><div class="eyebrow">LEARN BY LISTENING</div><h1>先搞懂它是什么，再点生成。</h1><p>这是<strong>作曲</strong>，不是念稿，也不是实时对话。顶栏三页不能混用。Lyria <strong>不是万能接口</strong>：不是 Cloud TTS，不是 Gemini Live，也不是无限长电台。</p></div>
+<article class="card mandate"><strong>官方定位：Lyria = 从提示词生成音乐，不是语音需求的统一入口</strong><p>短片：大约 30 秒，先试风格。成曲：最多大约 184 秒，要主歌副歌和人声。配乐：Lyria 2 器乐 WAV，有排除项和 seed。点生成才会计费。</p><p class="not-for">不要用 Lyria 提：TTS 念稿、可打断接待、克隆歌手、普通话流行歌产品、实时合奏。</p></article>
+<article class="card compare-card"><h2>能撑多久：对业务的影响</h2><p class="hint">总表只在这一页。短片 / 成曲 / 配乐各页只写本页会碰到的情况。配额大约每分钟 10 次。成曲常要等一两分钟。</p><div id="session-limits"></div></article>
+<div class="learn-grid">
+<article class="card"><h2>它能干嘛</h2><p>短广告、循环垫乐、片头片尾、看着海报出配乐、指定歌词或时间轴。生成音频带 SynthID。Lyria 3 可人声；Lyria 2 只要器乐。</p></article>
+<article class="card"><h2>三页分别是谁</h2><p>「短片」= Clip，Interactions，global，约 30 秒。「成曲」= Pro，同一条 API，最多约 184 秒。「配乐」= lyria-002 predict，us-central1，WAV 器乐。</p></article>
+<article class="card"><h2>先做这三件事</h2><p>① 短片页生成器乐吉他，听大约 30 秒<br>② 成曲页打开时间轴样例，看时长写在提示词里<br>③ 配乐页试 negative_prompt 和 seed（不能一起开「一次出几条」）</p></article>
+</div>
+<article class="card compare-card"><h2>官方原生支持哪些能力？</h2><p class="hint">核查日期 2026-09-11。Lyria 3 没有 negative_prompt。歌声语言没有普通话。</p><div id="model-rules"></div></article>
+<article class="card compare-card"><h2>三个工作台怎么选？</h2><p class="hint">先对场景，再进对应页。样例不会跨页。</p><div id="compare-models"></div></article>
+<article class="card compare-card"><h2>短片 / 成曲 / 配乐</h2><p class="hint">这不是三个按钮那么简单：成曲换了模型 ID 和时长；配乐换了 API 和区域。</p><div id="compare-methods"></div></article>
+<article class="card compare-card"><h2>Vertex Interactions、Gemini API、RealTime</h2><p class="hint">本 Demo 只走 Vertex + ADC。API Key 的 lyria-3.5、流式合奏都不是这个按钮。</p><div id="compare-api"></div></article>
+<article class="card compare-card"><h2>什么时候不选 Lyria？</h2><p class="hint">念稿请回 TTS。接待请回 Live。</p><div id="compare-why"></div></article>
+<article class="card compare-card"><h2>业务怎么选型？</h2><p class="hint">定价以官方价目为准。Preview 模型会变。</p><div id="compare-fit"></div></article>
+<article class="card compare-card"><h2>每个开关的业务价值</h2><p class="hint">短片/成曲第 02 步每个开关下面也有同样的说明。</p><div id="feature-value"></div></article>
+<article class="card compare-card"><h2>本产品还有、网页 Demo 故意没接的能力</h2><p class="hint">只列 Lyria 自己有、但网页当场做不了的能力。TTS、Live、模型出视频都不是「有但没接」。</p><div id="api-out-of-demo"></div></article>
+<div class="button-row"><button class="secondary" id="show-guide">学习指南</button><button class="secondary" id="show-readme">安装与排错 README</button></div>
+<article class="card document" id="guide-content">正在读取学习指南…</article>
+</section>
+<section id="sources" hidden>
+<div class="page-title"><div class="eyebrow">OFFICIAL REFERENCES · 2026.09.11</div><h1>有出处，才有底气。</h1><p>按用途整理官方入口。文档会更新，请以对应服务与模型页为准。</p></div>
+<div id="source-links" class="source-list"></div>
+<article class="card document" id="source-content"></article>
+</section>
+</main>
+<footer><span>♪ 配乐实验室</span><span>学习用 Demo · 非 Google 官方产品 · 每个工作台单独一页</span></footer>
+</body>
+</html>

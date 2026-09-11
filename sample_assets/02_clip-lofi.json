@@ -1,0 +1,13 @@
+{
+  "id": "clip-lofi",
+  "title": "循环 · 学习垫乐",
+  "group": "短片能干什么",
+  "note": "短视频/专注垫乐。勾选只要器乐。不要指望它当三分钟专辑。",
+  "engine": "clip",
+  "expected": "大约 30 秒 lo-fi 循环，适合垫底。",
+  "config": {
+    "prompt": "A warm, modern lofi hip-hop beat for studying, featuring a muffled drum break and dusty jazz piano samples. 80 BPM. Instrumental.",
+    "instrumental": true,
+    "lyrics": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clip-jpop",
+  "title": "人声 · 日语短片",
+  "group": "短片能干什么",
+  "note": "歌声语言写进提示词。官方表有日语，没有普通话。",
+  "engine": "clip",
+  "expected": "大约 30 秒偏 J-pop 的短片，日语男声。",
+  "config": {
+    "prompt": "An upbeat, high-energy J-pop track with bright, sparkling synths, electric guitar, and a driving bassline. Featuring a clear, expressive male tenor vocal singing in Japanese. Fast-paced, sweet, highly polished. About 30 seconds.",
+    "instrumental": false,
+    "lyrics": ""
+  }
+}

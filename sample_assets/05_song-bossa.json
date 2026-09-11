@@ -1,0 +1,13 @@
+{
+  "id": "song-bossa",
+  "title": "成曲 · 英法对唱",
+  "group": "先这样试",
+  "note": "官方提示词指南里的融合示例。成曲可能要等一两分钟。最多大约 184 秒。",
+  "engine": "song",
+  "expected": "带人声的短单，英语+法语对唱，Bossa Nova 和 R&B。",
+  "config": {
+    "prompt": "A romantic fusion of classic Bossa Nova and modern R&B. The mood is intimate, warm, and deeply affectionate. Features a gentle acoustic nylon-string guitar, warm electric piano chords, and a crisp, laid-back modern hip-hop drum beat. A slow, swaying tempo. Featuring a vocal duet: a smooth male vocalist singing in English, and a soft, breathy female vocalist singing in French. The lyrics are a beautiful love song about an undeniable, cross-cultural connection. Create a 2-minute-50-second song.",
+    "instrumental": false,
+    "lyrics": ""
+  }
+}

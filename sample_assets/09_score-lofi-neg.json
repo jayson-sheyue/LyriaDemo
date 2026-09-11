@@ -1,0 +1,14 @@
+{
+  "id": "score-lofi-neg",
+  "title": "排除 · 学习垫乐",
+  "group": "配乐能干什么",
+  "note": "只有这一页有 negative_prompt。不要抄到短片/成曲。",
+  "engine": "score",
+  "expected": "更平稳的 lo-fi 器乐，少突然变响。",
+  "config": {
+    "prompt": "A warm, modern lofi hip-hop beat for studying, featuring a muffled drum break and dusty jazz piano samples. Instrumental.",
+    "negative_prompt": "vocals, complex melodies, loud dynamics, sudden changes",
+    "seed": "",
+    "sample_count": 1
+  }
+}

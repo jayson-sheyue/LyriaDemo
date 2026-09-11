@@ -1,0 +1,13 @@
+{
+  "id": "song-timestamps",
+  "title": "时间轴 · 卡点",
+  "group": "成曲能干什么",
+  "note": "时长和结构写在提示词里，没有滑杆。Clip 只有 30 秒，细时间轴请用这一页。",
+  "engine": "song",
+  "expected": "按秒进鼓、进副歌的短曲。",
+  "config": {
+    "prompt": "Create a 60-second instrumental track at 80 BPM. The feeling is nostalgic, introspective, and atmospheric.\n\n[0:00 - 0:12] Intro: soft Fender Rhodes chords, warm reverb. Intensity: 1/10 (Very Low)\n[0:12 - 0:24] Verse 1: laid-back drum beat, ethereal synth pad, subtle sub-bass. Intensity: 3/10 (Low)\n[0:24 - 0:36] Build: syncopated hi-hat, warm rounded synth lead. Intensity: 5/10 (Medium)\n[0:36 - 0:48] Chorus: pull back; Rhodes groove and drums only. Intensity: 4/10 (Medium-Low)\n[0:48 - 1:00] Outro: drums and bass drop out, fade on Rhodes. Intensity: 2/10 (Very Low)",
+    "instrumental": true,
+    "lyrics": ""
+  }
+}

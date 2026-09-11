@@ -1,0 +1,14 @@
+{
+  "id": "score-seed",
+  "title": "可复现 · 同一条",
+  "group": "配乐能干什么",
+  "note": "seed 和一次出几条不能一起用。定稿填 seed、条数留 1。",
+  "engine": "score",
+  "expected": "同一 prompt+seed 会尽量给出同一条器乐。",
+  "config": {
+    "prompt": "A calm acoustic folk song with a gentle guitar melody and soft strings.",
+    "negative_prompt": "drums, electric guitar",
+    "seed": "98765",
+    "sample_count": 1
+  }
+}
